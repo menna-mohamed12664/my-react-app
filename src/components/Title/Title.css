@@ -1,0 +1,25 @@
+.title {
+  text-align: center;
+  color: #212ea0;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 70px auto;
+  width: fit-content;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  user-select: none;
+  text-shadow: 0 0 15px rgba(137, 124, 203, 0.9);
+}
+.title h2 {
+  font-size: 32px;
+  color: #000f38;
+  margin-top: 5px;
+  text-transform: none;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  user-select: none;
+}
+.title p {
+  letter-spacing: 1px;
+}

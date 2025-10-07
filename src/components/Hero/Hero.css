@@ -1,0 +1,60 @@
+.hero {
+  width: 100%;
+  min-height: 100dvh;
+
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url("../../assets/IMG-20251006-WA0002.jpg") no-repeat center / cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-text {
+  align-items: center;
+  max-width: 880px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  word-break: keep-all;
+}
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+  text-wrap: balance;
+  user-select: none;
+}
+.hero-text p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.5;
+  text-wrap: balance;
+  user-select: none;
+}
+.btn.dark-arrow {
+  user-select: none;
+}
+.btn.dark-arrow img {
+  transition: 0.9s;
+  margin-left: 10px;
+  user-select: none;
+}
+.btn.dark-arrow:hover img {
+  transform: translateX(10px);
+}
+
+/*------------ Media Query ------------ */
+@media (max-width: 980px) {
+  .hero-text h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 680px) {
+  .hero-text h1 {
+    font-size: 30px;
+    max-width: 400px;
+    margin: 15px auto;
+  }
+  .hero button {
+    margin-top: 20px;
+  }
+}

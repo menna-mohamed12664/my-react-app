@@ -1,0 +1,134 @@
+.testimoials {
+  margin: 80px auto;
+  padding: 0 80px;
+  position: relative;
+}
+.next-btn,
+.back-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 10px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #212ba0;
+  transition: 0.5s;
+  user-select: none;
+}
+.back-btn {
+  right: auto;
+  left: 0;
+}
+.next-btn:hover {
+  padding: 5px;
+  width: 55px;
+}
+.back-btn:hover {
+  padding: 5px;
+  width: 55px;
+}
+.slider {
+  overflow: hidden;
+}
+.slider ul {
+  display: flex;
+  width: 200%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.slider ul li {
+  list-style: none;
+  width: 50%;
+  padding: 20px;
+}
+.slider ul li .sider {
+  box-shadow: 0 0 20px rgb(0, 0, 0.05);
+  padding: 40px;
+  border-radius: 10px;
+  color: #676767;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  user-select: none;
+}
+.sider img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 4px solid #212ea0;
+  object-fit: cover;
+  object-position: 0px -15px;
+}
+.user_info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  user-select: none;
+}
+.user_info h3 {
+  color: #212ba0;
+  user-select: none;
+}
+
+/* -------------- Media Query --------------- */
+
+@media (max-width: 850px) {
+  .testimoials {
+    padding: 0 40px;
+  }
+  .next-btn,
+  .back-btn {
+    padding: 2px;
+    width: 30px;
+    font-size: 10px;
+  }
+  .next-btn:hover {
+    padding: 5px;
+    width: 40px;
+  }
+  .back-btn:hover {
+    padding: 5px;
+    width: 40px;
+  }
+  .testimoials ul li {
+    padding: 10px;
+  }
+  .slider ul li .sider {
+    box-shadow: 0 0 14px rgb(0, 0, 0.05);
+    padding: 13px;
+  }
+  .sider img {
+    width: 50px;
+    border: 3px solid #212ea0;
+    object-fit: cover;
+    object-position: 0px -5px;
+  }
+}
+
+@media (max-width: 760px) {
+  .user_info {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .user_info h3 {
+    font-size: 15px;
+  }
+  .sider p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .slider ul li {
+    width: 100%;
+  }
+  .next-btn,
+  .back-btn {
+    width: 25px;
+    padding: 2px;
+  }
+}
